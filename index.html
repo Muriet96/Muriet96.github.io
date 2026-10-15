@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guillermo Ramírez · Senior React Native Developer</title>
+<meta name="description" content="Guillermo Ramírez, Senior React Native Developer e Ingeniero en Sistemas con más de 8 años creando apps iOS y Android con React Native y TypeScript. Buenos Aires, Argentina.">
+<meta name="author" content="Guillermo Ramírez">
+<link rel="canonical" href="https://muriet.me/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Guillermo Ramírez · Senior React Native Developer">
+<meta property="og:description" content="Más de 8 años creando y publicando apps iOS y Android con React Native y TypeScript.">
+<meta property="og:url" content="https://muriet.me/">
+<meta name="theme-color" content="#F2F4F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141A23" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233042C4'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' fill='white' text-anchor='middle'%3EGR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Guillermo Ramírez",
+  "alternateName": "Guillermo Andrés Ramírez Murrieta",
+  "jobTitle": "Senior React Native Developer",
+  "url": "https://muriet.me/",
+  "email": "mailto:muriet96@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
+  "worksFor": { "@type": "Organization", "name": "Central de Pasajes" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Guayaquil" },
+  "knowsLanguage": ["es", "it", "en"],
+  "knowsAbout": ["React Native", "TypeScript", "JavaScript", "iOS", "Android", "React", "Redux Toolkit", "Jest", "Maestro", "CI/CD", "GitHub Actions", "Mobile app development"],
+  "sameAs": ["https://www.linkedin.com/in/muriet96", "https://github.com/Muriet96"]
+}
+</script>
+<style>
+:root {
+  --paper: #F2F4F7;
+  --surface: #FFFFFF;
+  --ink: #18202B;
+  --muted: #5B6676;
+  --rule: #D6DCE4;
+  --accent: #3042C4;
+  --accent-soft: #E3E7FB;
+  --live: #1D7A4E;
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --text: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141A23;
+    --surface: #1B2330;
+    --ink: #E8ECF2;
+    --muted: #9AA5B5;
+    --rule: #2C3646;
+    --accent: #8C9BFF;
+    --accent-soft: #252F52;
+    --live: #5CCB95;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141A23; --surface: #1B2330; --ink: #E8ECF2; --muted: #9AA5B5;
+  --rule: #2C3646; --accent: #8C9BFF; --accent-soft: #252F52; --live: #5CCB95;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--text);
+  font-feature-settings: "tnum" 0;
+}
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+html[data-lang="es"] [lang="en"],
+html[data-lang="en"] [lang="es"] { display: none !important; }
+
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Top bar */
+.top {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.25rem 0;
+  font-size: 0.9375rem;
+}
+.top .handle { color: var(--muted); text-decoration: none; }
+.lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; padding: 3px; background: var(--surface); }
+.lang button {
+  font: 600 0.8125rem/1 var(--text);
+  border: 0; background: transparent; color: var(--muted);
+  padding: 0.45rem 0.8rem; border-radius: 999px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+
+/* Hero */
+.hero { padding: 3.5rem 0 3rem; }
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 75%;
+  font-variation-settings: "opsz" 96;
+  font-size: clamp(3.25rem, 13vw, 6.75rem);
+  line-height: 0.88;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.5rem;
+}
+.hero h1 span { display: block; }
+.hero .role {
+  font-family: var(--display);
+  font-weight: 600;
+  font-stretch: 90%;
+  font-size: clamp(1.25rem, 3.6vw, 1.6rem);
+  line-height: 1.25;
+  margin: 0 0 1rem;
+  max-width: 34ch;
+}
+.hero .lede { color: var(--muted); max-width: 60ch; margin: 0 0 2rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-weight: 600; font-size: 0.9375rem;
+  padding: 0.7rem 1.15rem; border-radius: 10px;
+  text-decoration: none; border: 1.5px solid var(--ink); color: var(--ink);
+}
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn:hover { text-decoration: none; background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn svg { width: 1.05em; height: 1.05em; }
+
+/* Sections */
+section { padding: 2.75rem 0; border-top: 1px solid var(--rule); }
+h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-stretch: 85%;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.4rem;
+}
+.section-note { color: var(--muted); margin: 0 0 1.75rem; max-width: 60ch; }
+
+/* Shipped apps */
+.apps { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.app {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 18px;
+  padding: 1.35rem 1.35rem 1.2rem;
+  display: flex; flex-direction: column;
+}
+.app h3 { font-family: var(--display); font-weight: 700; font-stretch: 90%; font-size: 1.3rem; margin: 0 0 0.2rem; }
+.app .meta { color: var(--muted); font-size: 0.875rem; margin: 0 0 0.75rem; }
+.app p { margin: 0 0 1.1rem; font-size: 0.975rem; }
+.stores { margin-top: auto; display: flex; gap: 1rem; flex-wrap: wrap; font-weight: 600; font-size: 0.9375rem; }
+
+/* Release log */
+.log { list-style: none; margin: 0; padding: 0; }
+.release {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0 1.25rem;
+  padding: 0 0 2.25rem;
+  position: relative;
+}
+.release::before {
+  content: ""; position: absolute; left: 2.05rem; top: 2.1rem; bottom: 0.2rem;
+  width: 2px; background: var(--rule);
+}
+.release:last-child::before { display: none; }
+.release:last-child { padding-bottom: 0; }
+.ver {
+  font-family: var(--display); font-weight: 700; font-stretch: 80%;
+  font-size: 1.05rem; line-height: 1;
+  justify-self: center;
+  background: var(--accent-soft); color: var(--accent);
+  border-radius: 8px; padding: 0.45rem 0.55rem; height: fit-content;
+  font-variant-numeric: tabular-nums;
+}
+.release.current .ver { background: var(--accent); color: #fff; }
+.release h3 { font-family: var(--display); font-weight: 700; font-stretch: 90%; font-size: 1.25rem; line-height: 1.25; margin: 0; }
+.release .org { font-weight: 600; margin: 0.1rem 0 0; }
+.release .when { color: var(--muted); font-size: 0.9rem; margin: 0.15rem 0 0.75rem; font-variant-numeric: tabular-nums; }
+.live { color: var(--live); font-weight: 600; }
+.live::before { content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: currentColor; margin-right: 0.4rem; vertical-align: 0.08em; }
+.release ul { margin: 0; padding-left: 1.1rem; }
+.release li { margin: 0 0 0.45rem; }
+.release li::marker { color: var(--muted); }
+.stack-line { margin: 0.9rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0; list-style: none; }
+.stack-line li { margin: 0; font-size: 0.8125rem; padding: 0.2rem 0.55rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+
+/* Skills */
+.skills { display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 0; }
+.skills dt { font-weight: 600; margin: 0 0 0.25rem; }
+.skills dd { margin: 0; color: var(--muted); font-size: 0.975rem; }
+
+/* Two-col facts */
+.facts { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.facts ul { list-style: none; margin: 0; padding: 0; }
+.facts li { padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
+.facts li:last-child { border-bottom: 0; }
+.facts .sub { display: block; color: var(--muted); font-size: 0.9rem; }
+
+/* Contact */
+.contact h2 { font-size: clamp(2rem, 7vw, 3rem); font-stretch: 80%; font-weight: 800; letter-spacing: -0.025em; }
+.contact .mail {
+  font-family: var(--display); font-weight: 700; font-stretch: 85%;
+  font-size: clamp(1.4rem, 5.4vw, 2rem); word-break: break-all;
+}
+.contact .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.25rem; font-weight: 600; }
+footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.875rem; }
+
+@media (max-width: 34rem) {
+  .release { grid-template-columns: 3.4rem 1fr; gap: 0 0.9rem; }
+  .release::before { left: 1.6rem; }
+  .ver { font-size: 0.95rem; padding: 0.4rem 0.45rem; }
+}
+
+/* One page-load moment: the name settles into its width */
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 span { animation: settle 900ms cubic-bezier(.2,.7,.2,1) both; }
+  .hero h1 span + span { animation-delay: 120ms; }
+  @keyframes settle {
+    from { font-stretch: 100%; letter-spacing: 0.02em; opacity: 0; }
+    to   { font-stretch: 75%; letter-spacing: -0.035em; opacity: 1; }
+  }
+}
+
+@media print {
+  .top .lang, .actions, .contact .links { display: none; }
+  body { background: #fff; }
+  section { break-inside: avoid-page; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="handle" href="https://github.com/Muriet96">@Muriet96</a>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1><span>Guillermo</span><span>Ramírez</span></h1>
+      <p class="role">
+        <span lang="es">Senior React Native Developer e Ingeniero en Sistemas</span>
+        <span lang="en">Senior React Native Developer and Computer Systems Engineer</span>
+      </p>
+      <p class="lede">
+        <span lang="es">Más de 8 años creando y publicando apps para iOS y Android con React Native y TypeScript, desde la arquitectura inicial hasta la publicación en las tiendas. Vivo en Buenos Aires y trabajo en remoto.</span>
+        <span lang="en">8+ years building and shipping iOS and Android apps with React Native and TypeScript, from the first architecture decisions to the store release. Based in Buenos Aires, working remotely.</span>
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:muriet96@gmail.com">
+          <span lang="es">Escríbeme</span><span lang="en">Email me</span>
+        </a>
+        <a class="btn" href="cv/Guillermo_Ramirez_CV_ES.pdf" lang="es" download>Descargar CV (PDF)</a>
+        <a class="btn" href="cv/Guillermo_Ramirez_CV_EN.pdf" lang="en" download>Download résumé (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/muriet96">LinkedIn</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="apps-h">
+      <h2 id="apps-h"><span lang="es">Apps publicadas</span><span lang="en">Shipped apps</span></h2>
+      <p class="section-note">
+        <span lang="es">Apps en producción que desarrollé y mantengo o mantuve. Están disponibles en las tiendas.</span>
+        <span lang="en">Production apps I built and maintain or maintained. Both are live in the stores.</span>
+      </p>
+      <div class="apps">
+        <article class="app">
+          <h3>Central de Pasajes</h3>
+          <p class="meta"><span lang="es">Desde 2025, en desarrollo activo</span><span lang="en">2025 to present, in active development</span></p>
+          <p>
+            <span lang="es">Venta de pasajes de ómnibus en 6 países de Latinoamérica. Compra con MercadoPago, selección de asientos, tickets con QR y viajes disponibles sin conexión.</span>
+            <span lang="en">Bus ticket booking across 6 Latin American countries. MercadoPago checkout, seat selection, QR tickets and offline trips.</span>
+          </p>
+          <div class="stores">
+            <a href="https://apps.apple.com/ar/app/central-de-pasajes/id1163617548">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.centraldepasajes">Google Play</a>
+          </div>
+        </article>
+        <article class="app">
+          <h3>Mercately</h3>
+          <p class="meta">2021–2026</p>
+          <p>
+            <span lang="es">Mensajería omnicanal para empresas, con CRM de clientes y conversaciones y gestión de órdenes de venta.</span>
+            <span lang="en">Omnichannel business messaging with a customer and conversation CRM and sales order management.</span>
+          </p>
+          <div class="stores">
+            <a href="https://apps.apple.com/us/app/mercately/id1563507366">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.mercately.app">Google Play</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="exp-h">
+      <h2 id="exp-h"><span lang="es">Experiencia</span><span lang="en">Experience</span></h2>
+      <p class="section-note">
+        <span lang="es">Mi carrera como notas de versión, de la más reciente a la primera.</span>
+        <span lang="en">My career as release notes, newest first.</span>
+      </p>
+      <ol class="log" reversed>
+
+        <li class="release current">
+          <span class="ver">v8.0</span>
+          <div>
+            <h3>Senior React Native Developer</h3>
+            <p class="org">Central de Pasajes</p>
+            <p class="when"><span lang="es">07/2025 – actual</span><span lang="en">07/2025 – present</span>, <span class="live"><span lang="es">Remoto, CABA</span><span lang="en">Remote, Buenos Aires</span></span></p>
+            <ul lang="es">
+              <li>Inicié el proyecto desde cero en un equipo de 2: arquitectura modular por features, capa de servicios tipada e internacionalización en 8 idiomas y variantes regionales.</li>
+              <li>Desarrollé la mayor parte del flujo de compra: búsqueda, asientos en varios pisos, validaciones por país con React Hook Form y Zod, y pago con MercadoPago.</li>
+              <li>Construí la gestión de viajes con persistencia offline (WatermelonDB), tickets con QR y devoluciones.</li>
+              <li>Migré de React Native 0.80 a 0.86 (New Architecture, Hermes), con edge-to-edge en Android 15+ y soporte para plegables.</li>
+              <li>Automaticé builds y releases para 4 entornos con scripts en Node.js, con distribución a QA y TestFlight.</li>
+              <li>Mantengo cerca de 4.700 tests con Jest y React Testing Library, más E2E con Maestro, validados en cada PR con GitHub Actions y SonarQube.</li>
+            </ul>
+            <ul lang="en">
+              <li>Bootstrapped the project in a 2-developer team: feature-based modular architecture, typed service layer and internationalization across 8 locales.</li>
+              <li>Built most of the checkout flow: search, multi-deck seat selection, per-country validation with React Hook Form and Zod, and MercadoPago payments.</li>
+              <li>Built trip management with offline persistence (WatermelonDB), QR tickets and refunds.</li>
+              <li>Migrated React Native 0.80 to 0.86 (New Architecture, Hermes), adding edge-to-edge on Android 15+ and foldable support.</li>
+              <li>Automated builds and releases for 4 environments with Node.js scripts, shipping to QA and TestFlight.</li>
+              <li>Maintain about 4,700 Jest and React Testing Library tests plus Maestro E2E, checked on every PR with GitHub Actions and SonarQube.</li>
+            </ul>
+            <ul class="stack-line" aria-label="Stack">
+              <li>React Native 0.86</li><li>TypeScript</li><li>Redux Toolkit</li><li>WatermelonDB</li><li>Reanimated 4</li><li>NativeWind</li><li>Jest</li><li>Maestro</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v7.0</span>
+          <div>
+            <h3>React Native &amp; Frontend Developer</h3>
+            <p class="org">Mercately</p>
+            <p class="when">07/2021 – 07/2026</p>
+            <ul lang="es">
+              <li>Desarrollé la app móvil de mensajería omnicanal de la plataforma, publicada en App Store y Google Play.</li>
+              <li>Implementé el CRM de clientes y conversaciones y la gestión de órdenes de venta para retailers.</li>
+              <li>Trabajé en el frontend web de la plataforma con ReactJS.</li>
+            </ul>
+            <ul lang="en">
+              <li>Developed the platform's omnichannel messaging app, published on the App Store and Google Play.</li>
+              <li>Implemented the customer and conversation CRM and sales order management for retailers.</li>
+              <li>Worked on the platform's web frontend with ReactJS.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v6.0</span>
+          <div>
+            <h3>React Native Developer</h3>
+            <p class="org">Freelance</p>
+            <p class="when">02/2021 – 07/2021</p>
+            <ul lang="es">
+              <li>Comunicación en tiempo real para la app de ventas de un cliente.</li>
+              <li>Migración de una app de cupones electrónicos a React Native y una app de seguros médicos.</li>
+            </ul>
+            <ul lang="en">
+              <li>Real-time communication for a client's sales app.</li>
+              <li>Migrated an e-coupon app to React Native and built a health insurance app.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v5.0</span>
+          <div>
+            <h3><span lang="es">Especialista en Aplicaciones Móviles</span><span lang="en">Mobile Applications Specialist</span></h3>
+            <p class="org">Conauto C.A.</p>
+            <p class="when">12/2019 – 02/2021, Guayaquil, Ecuador</p>
+            <ul lang="es"><li>Dos apps de venta B2B con React Native: una para vendedores y otra para empresas clientes.</li></ul>
+            <ul lang="en"><li>Two B2B sales apps in React Native, one for sales reps and one for business clients.</li></ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v4.0</span>
+          <div>
+            <h3><span lang="es">Desarrollador Web y Mobile</span><span lang="en">Web and Mobile Developer</span></h3>
+            <p class="org">5Bits</p>
+            <p class="when">06/2019 – 12/2019, Guayaquil, Ecuador</p>
+            <ul lang="es"><li>Apps con React Native, entre ellas una de inventario, y módulos para el ERP Odoo 11 en Python.</li></ul>
+            <ul lang="en"><li>React Native apps, including an inventory app, and Odoo 11 ERP modules in Python.</li></ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v3.0</span>
+          <div>
+            <h3><span lang="es">Desarrollador Web y Mobile</span><span lang="en">Web and Mobile Developer</span></h3>
+            <p class="org">Ecuador On Rails</p>
+            <p class="when">11/2018 – 06/2019, Guayaquil, Ecuador</p>
+            <ul lang="es"><li>Apps de delivery de gas y de encuestas con React Native, control de acceso para un estadio con dispositivos Famoco y módulos de Odoo.</li></ul>
+            <ul lang="en"><li>Gas delivery and survey apps in React Native, stadium access control on Famoco devices, and Odoo modules.</li></ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v2.0</span>
+          <div>
+            <h3><span lang="es">Pasante de Desarrollo</span><span lang="en">Software Development Intern</span></h3>
+            <p class="org">Ecuador On Rails</p>
+            <p class="when">04/2017 – 11/2017</p>
+            <ul lang="es"><li>Primeras apps con React Native, módulos de Odoo y scripts en Python.</li></ul>
+            <ul lang="en"><li>First React Native apps, Odoo modules and Python scripts.</li></ul>
+          </div>
+        </li>
+
+        <li class="release">
+          <span class="ver">v1.0</span>
+          <div>
+            <h3><span lang="es">Desarrollador Freelance</span><span lang="en">Freelance Developer</span></h3>
+            <p class="when">01/2016 – 03/2017</p>
+            <ul lang="es"><li>Scripts en Python y programas en C#.</li></ul>
+            <ul lang="en"><li>Python scripts and C# programs.</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="skills-h">
+      <h2 id="skills-h"><span lang="es">Herramientas</span><span lang="en">Toolkit</span></h2>
+      <p class="section-note">
+        <span lang="es">Lo que uso en el día a día.</span>
+        <span lang="en">What I use day to day.</span>
+      </p>
+      <dl class="skills">
+        <div><dt>Mobile</dt><dd>React Native (New Architecture, Fabric, Hermes), React, TypeScript, JavaScript, Expo, iOS, Android</dd></div>
+        <div><dt><span lang="es">Estado y datos</span><span lang="en">State and data</span></dt><dd>Redux Toolkit, WatermelonDB, Realm, MMKV, SQLite, Axios, React Hook Form, Zod</dd></div>
+        <div><dt><span lang="es">UI y navegación</span><span lang="en">UI and navigation</span></dt><dd>React Navigation, Reanimated, Gesture Handler, NativeWind, FlashList, React Native Maps, deep linking</dd></div>
+        <div><dt><span lang="es">Nativo y publicación</span><span lang="en">Native and release</span></dt><dd>Gradle, Kotlin, CocoaPods, Xcode, ProGuard/R8, flavors y schemes, TestFlight, App Store, Google Play</dd></div>
+        <div><dt>Testing</dt><dd>Jest, React Testing Library, Maestro, Detox, ESLint, Prettier, Husky, SonarQube</dd></div>
+        <div><dt><span lang="es">Pagos, analytics y push</span><span lang="en">Payments, analytics and push</span></dt><dd>MercadoPago, Firebase (GA4, FCM), CleverTap, OneSignal, Sentry</dd></div>
+        <div><dt>CI/CD</dt><dd>GitHub Actions, <span lang="es">scripts de release en Node.js</span><span lang="en">Node.js release scripts</span>, Git, Claude Code</dd></div>
+        <div><dt><span lang="es">Web y otros</span><span lang="en">Web and other</span></dt><dd>ReactJS, i18next, Python, Odoo, C#</dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="edu-h">
+      <div class="facts">
+        <div>
+          <h2 id="edu-h"><span lang="es">Formación</span><span lang="en">Education</span></h2>
+          <ul>
+            <li><span lang="es">Ingeniería en Sistemas Computacionales</span><span lang="en">Computer Systems Engineering</span><span class="sub">Universidad de Guayaquil, 2019</span></li>
+            <li><span lang="es">Informática</span><span lang="en">Computer Science</span><span class="sub">UEAS, Guayaquil, 2016</span></li>
+            <li><span lang="es">Zootecnia</span><span lang="en">Animal Science</span><span class="sub">Istituto Tecnico Agrario Statale, Cesena, <span lang="es">Italia</span><span lang="en">Italy</span>, 2015</span></li>
+          </ul>
+        </div>
+        <div>
+          <h2><span lang="es">Idiomas</span><span lang="en">Languages</span></h2>
+          <ul>
+            <li><span lang="es">Español</span><span lang="en">Spanish</span><span class="sub"><span lang="es">Nativo</span><span lang="en">Native</span></span></li>
+            <li><span lang="es">Italiano</span><span lang="en">Italian</span><span class="sub"><span lang="es">Nativo</span><span lang="en">Native</span></span></li>
+            <li><span lang="es">Inglés</span><span lang="en">English</span><span class="sub"><span lang="es">Intermedio (B1)</span><span lang="en">Intermediate (B1)</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h"><span lang="es">¿Hablamos?</span><span lang="en">Let's talk</span></h2>
+      <p class="section-note">
+        <span lang="es">Estoy abierto a posiciones remotas como Senior React Native Developer.</span>
+        <span lang="en">I'm open to remote Senior React Native Developer roles.</span>
+      </p>
+      <a class="mail" href="mailto:muriet96@gmail.com">muriet96@gmail.com</a>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/muriet96">LinkedIn</a>
+        <a href="https://github.com/Muriet96">GitHub</a>
+        <a href="cv/Guillermo_Ramirez_CV_ES.pdf" download>CV (ES)</a>
+        <a href="cv/Guillermo_Ramirez_CV_EN.pdf" download>Résumé (EN)</a>
+        <a href="cv/Guillermo_Ramirez_CV_IT.pdf" download>CV (IT)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Guillermo Ramírez</footer>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll('[data-set-lang]');
+  var titles = {
+    es: 'Guillermo Ramírez · Senior React Native Developer',
+    en: 'Guillermo Ramírez · Senior React Native Developer'
+  };
+  function apply(lang) {
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    document.title = titles[lang];
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)); });
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var param = new URLSearchParams(location.search).get('lang');
+  var initial = param || saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+  if (initial !== 'es' && initial !== 'en') initial = 'es';
+  apply(initial);
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      apply(b.dataset.setLang);
+      try { localStorage.setItem('lang', b.dataset.setLang); } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
